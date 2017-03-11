@@ -11,20 +11,54 @@
     <link rel='shortcut icon' type='image/x-icon' href='images/logos/favicon.png' />
 
 		<!-- build:css css/stylesheet.min.css -->
-	<link rel="stylesheet" href="vendor/normalize/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
-    	<!-- endbuild -->
+    <link rel="stylesheet" href="vendor/normalize/normalize.css">
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+  	<!-- endbuild -->
   </head>
   <body>
     <!--[if lt IE 8]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <form action="" method="POST" role="form">
+          <legend>Form title</legend>
+
+          <div class="form-input">
+            <label for="first_name"></label>
+            <input type="text" id="first_name" name="first_name" placeholder="Nombre">
+          </div>
+
+          <div class="form-input">
+            <label for="last_name"></label>
+            <input type="text" id="last_name" name="last_name" placeholder="Apellido">
+          </div>
+
+          <div class="form-input">
+            <label for="email"></label>
+            <input type="email" id="email" name="email" placeholder="Mail">
+          </div>
+
+          <div class="form-input">
+            <label for="comment"></label>
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+          </div>
+
+          <button type="submit" id="contact_submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </section><!-- ./CONTACT -->
 
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script>window.jQuery || document.write('<script src="vendor/jquery/jquery-1.12.0.min.js"><\/script>')</script>
+    <!-- build:js js/vendor.min.js -->
+    <script src="vendor/bootstrap/bootstrap.js"></script>
+    <!-- endbuild -->
 		<!-- build:js js/scripts.min.js -->
-	<script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 		<!-- endbuild -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

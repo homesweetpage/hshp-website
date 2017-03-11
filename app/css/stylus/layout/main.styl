@@ -1,17 +1,17 @@
 /* Base styles: opinionated defaults */
 
 html
-  color #222
-  font-size 1em
-  line-height 1.4
+  color: #222
+  font-size: 1em
+  line-height: 1.4
 
 ::selection
-  background-color #5CD7FF
-  text-shadow none
+  background-color: #5CD7FF
+  text-shadow: none
 
 ::-moz-selection
-  background-color #5CD7FF
-  text-shadow none
+  background-color: #5CD7FF
+  text-shadow: none
 
 /* Remove the gap between audio, canvas, iframes, images, videos and the bottom of their containers */
 
@@ -21,27 +21,65 @@ iframe
 img
 svg
 video
-  vertical-align middle
+  vertical-align: middle
 
 /* Remove default fieldset styles */
 
 fieldset
-  border 0
-  margin 0
-  padding 0
+  border: 0
+  margin: 0
+  padding: 0
 
 /* Allow only vertical resizing of textareas */
 
 textarea
-  resize vertical
+  resize: vertical
 
 /* Browser Upgrade Prompt */
 
 .browserupgrade
-  margin 0.2em 0
-  background $gray80
-  color $black
-  padding 0.2em 0
+  margin: 0.2em 0
+  background: $gray80
+  color: $black
+  padding: 0.2em 0
 
 .hidden
-  display none !important
+  display: none !important
+
+body
+  background-color: rgba($verde1, 0.05)
+
+.container
+  background-color: $white
+
+form
+
+  .form-input
+    text-align: left
+    position: relative
+
+    input[type="text"]
+    input[type="email"]
+    textarea
+    button
+      padding: 12px
+      font-size: 14px
+      border: 1px solid $verde4
+      width: 100%
+      margin-bottom: 18px
+      color: #888
+      font-family: $font
+      font-size: 16px
+      font-weight: 300
+      background-color: $white
+      border-radius: 2px
+      transition all 0.3s
+
+      &:hover
+      &:focus
+        outline: none
+        border-color: $verde4
+
+    label
+      color: $verde1
+      cursor: text
