@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $("#consulta").click(function(event) {
+  $("#contact_submit").click(function(event) {
     event.preventDefault();
     var form = event.target;
     var nombre = "";
