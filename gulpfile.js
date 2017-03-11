@@ -65,6 +65,7 @@ function compressFiles() {
 
 function removeUnusedCSS() {
   gulp.src(paths.dist + '/css/stylesheet.min.css')
+    .pipe(plumber(plumberOpts))
     .pipe(uncss({
       html: [paths.app + '/index.html']
     }))
