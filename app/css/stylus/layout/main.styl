@@ -2,7 +2,6 @@
 
 html
   color: #222
-  font-family: $font
   font-size: 1em
   line-height: 1.4
 
@@ -46,3 +45,41 @@ textarea
 
 .hidden
   display: none !important
+
+body
+  background-color: rgba($verde1, 0.05)
+
+.container
+  background-color: $white
+
+form
+
+  .form-input
+    text-align: left
+    position: relative
+
+    input[type="text"]
+    input[type="email"]
+    textarea
+    button
+      padding: 12px
+      font-size: 14px
+      border: 1px solid $verde4
+      width: 100%
+      margin-bottom: 18px
+      color: #888
+      font-family: $font
+      font-size: 16px
+      font-weight: 300
+      background-color: $white
+      border-radius: 2px
+      transition all 0.3s
+
+      &:hover
+      &:focus
+        outline: none
+        border-color: $verde4
+
+    label
+      color: $verde1
+      cursor: text
