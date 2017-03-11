@@ -1,0 +1,47 @@
+/* Base styles: opinionated defaults */
+
+html
+  color #222
+  font-size 1em
+  line-height 1.4
+
+::selection
+  background-color #5CD7FF
+  text-shadow none
+
+::-moz-selection
+  background-color #5CD7FF
+  text-shadow none
+
+/* Remove the gap between audio, canvas, iframes, images, videos and the bottom of their containers */
+
+audio
+canvas
+iframe
+img
+svg
+video
+  vertical-align middle
+
+/* Remove default fieldset styles */
+
+fieldset
+  border 0
+  margin 0
+  padding 0
+
+/* Allow only vertical resizing of textareas */
+
+textarea
+  resize vertical
+
+/* Browser Upgrade Prompt */
+
+.browserupgrade
+  margin 0.2em 0
+  background $gray80
+  color $black
+  padding 0.2em 0
+
+.hidden
+  display none !important
