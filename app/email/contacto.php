@@ -12,7 +12,7 @@ if($_POST){
 		"Nombre: " .$name ."\r\n"
         ."Apellido: " .$lname ."\r\n" ."\r\n"
 		."Email: " .$email ."\r\n" ."\r\n"
-        ."Cantidad de hombres: " .$comment ."\r\n"
+        ."Comentario: " .$comment ."\r\n"
     ;
 
 	$subject = "HSHP Web - Consulta de: " .$email;
