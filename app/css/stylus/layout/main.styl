@@ -47,7 +47,7 @@ textarea
   display: none !important
 
 body
-  background-color: rgba($verde1, 0.05)
+  background-color: #435a6b//rgba($verde1, 0.05)
   font-family: $font
 
 .container
@@ -146,51 +146,3 @@ form
 
 .ta-right
   text-align: right
-
-.btn-hshp
-  border: 2px solid $verde4
-  font-family: $font
-  font-size: inherit
-  color: $verde1
-  background: none
-  cursor: pointer
-  padding: 11px 80px
-  display: inline-block
-  margin: 15px 0
-  text-transform: uppercase
-  letter-spacing: 1px
-  font-weight: 700
-  outline: none
-  overflow: hidden
-  position: relative
-  transition: all 0.3s
-  z-index: 1
-
-  &:after
-    content: ''
-    position: absolute
-    z-index: -1
-    transition: all 0.3s
-    width: 0
-    height: 103%
-    top: 50%
-    left: 50%
-    background: $verde4
-    opacity: 0
-    transform: translateX(-50%) translateY(-50%)
-
-  &:hover
-  &:active
-    color: $white
-
-  &:hover
-
-    &:after
-      width: 95%
-      opacity: 1
-
-  &:active
-
-    &:after
-      width: 101%
-      opacity: 1
