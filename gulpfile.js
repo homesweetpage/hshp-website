@@ -47,7 +47,7 @@ function runStylus() {
 }
 
 function jsHint() {
-  return gulp.src([paths.app + paths.js + '/main.js', './gulpfile.js'])
+  return gulp.src([paths.app + paths.js + '/main.js', paths.app + paths.js + '/animate.js', paths.app + paths.js + '/contacto.js', './gulpfile.js'])
     .pipe(plumber(plumberOpts))
     .pipe(jshint('.jshintrc'))
     .pipe(jshint.reporter('jshint-stylish'))
