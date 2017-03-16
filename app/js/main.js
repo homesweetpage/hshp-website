@@ -5,6 +5,12 @@ function validateEmail(email) {
   return re.test(email);
 }
 
+function homeHandle() {
+  var $boxImg = $('.idea, .us, .result');
+  var calc = $boxImg.width() * 1.2;
+  $boxImg.height(calc);
+}
+
 function formHandle() {
   var $inputs = $('.form-input > input, textarea');
 
@@ -34,6 +40,7 @@ function formHandle() {
 }
 
 function mainReady() {
+  homeHandle();
   formHandle();
 }
 
