@@ -1,5 +1,15 @@
 form
 
+  legend
+    color: $verdebg
+    font-size: 2em
+
+    span
+      color: #333
+
+      &:before
+        color: #333
+
   .form-input
     text-align: left
     position: relative
@@ -34,12 +44,20 @@ form
       opacity: 1
       padding: 4px 10px
       font-weight: 400
-      background-color: $white
+      background-color: transparent
       pointer-events: none
       transition: opacity 0.5s
 
       &.label-animate
         opacity: 0
+
+  .cb-send
+    margin-bottom: 18px
+
+    h5
+      margin: 0px
+      padding: 12px 16px
+      font-size: 16px
 
 .square-bracket
   position: relative
@@ -82,9 +100,24 @@ form
 
     input[type="text"]
     textarea
-      background-color rgba($danger-bgc, 0.2)
+      background-color: rgba($danger-bgc, 0.2)
+
+    h5
+      background-color: rgba($danger-bgc, 0.2)
+      color: $danger-bgc
 
     &:before
     &:after
       border-color: $danger-bgc
+      opacity: 1
+
+  &.square-success
+
+    h5
+      background-color: rgba($success-bgc, 0.2)
+      color: $success-bgc
+
+    &:before
+    &:after
+      border-color: $success-bgc
       opacity: 1
