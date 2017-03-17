@@ -23,15 +23,30 @@ $(document).ready(function(){
           url: 'email/contacto.php',
           data: data,
           success: function(){
-            console.log('success');
+            var cbsend = $('.cb-send');
+            cbsend.addClass('square-success').fadeIn();
+            cbsend.children().html('Éxito<span>Gracias por enviarnos tu consulta</span>');
           },
           error:function () {
-            console.log('error');
+            var cbsend = $('.cb-send');
+            cbsend.addClass('square-error').fadeIn();
+            cbsend.children().html('Error<span>Mensaje no enviado</span>');
           }
       });
     }
     else {
-      console.log('completar campos');
+      if(nombre == ''){
+        $('#first_name').parent().addClass('square-error');
+      }
+      if(apellido == ''){
+        $('#last_name').parent().addClass('square-error');
+      }
+      if(!validateEmail(email)){
+        $('#email').parent().addClass('square-error');
+      }
+      if(comment == ''){
+        $('#comment').parent().addClass('square-error');
+      }
     }
 });
 });

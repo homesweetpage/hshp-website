@@ -36,6 +36,9 @@ function formHandle() {
         $parent.removeClass('square-error');
       }
     }
+    else{
+      $parent.removeClass('square-error');
+    }
   });
 }
 
