@@ -138,15 +138,16 @@ $(document).ready(function() {
 		if (enabledEvents(getWindowWidth())) {
 			switch(event.keyCode) {
 				case KEY_UP:
+					event.preventDefault();
 					transitionScroll(1);
 					break;
 				case KEY_DOWN:
+					event.preventDefault();
 					transitionScroll(-1);
 					break;
 				default:
 					break;
 			}
-			event.preventDefault();
 		}
 	});
 
