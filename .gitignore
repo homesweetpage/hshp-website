@@ -1,1 +1,6 @@
 node_modules/
+dist/
+app/css/style.css
+app/images/*
+app/videos/*
+app/audio/*
