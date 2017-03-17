@@ -133,6 +133,12 @@ $(document).ready(function() {
 
 	initVSOP();
 
+  // CUSTOM EVENT
+  $('.btn-down').click(function(event) {
+    event.preventDefault();
+    transitionScroll(-1);
+  });
+
 	// KEYS
 	$(document).keydown(function(event) {
 		if (enabledEvents(getWindowWidth())) {
