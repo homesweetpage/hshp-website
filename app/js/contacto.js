@@ -35,16 +35,16 @@ $(document).ready(function(){
       });
     }
     else {
-      if(nombre == ''){
+      if(nombre === ''){
         $('#first_name').parent().addClass('square-error');
       }
-      if(apellido == ''){
+      if(apellido === ''){
         $('#last_name').parent().addClass('square-error');
       }
       if(!validateEmail(email)){
         $('#email').parent().addClass('square-error');
       }
-      if(comment == ''){
+      if(comment === ''){
         $('#comment').parent().addClass('square-error');
       }
     }
