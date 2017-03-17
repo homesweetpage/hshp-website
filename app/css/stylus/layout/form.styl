@@ -1,5 +1,20 @@
 form
 
+  legend
+    font-family: $fontBN
+    font-weight: 400
+    font-size: 2em
+    text-transform: uppercase
+
+    span
+      font-family: $fontFC
+      font-weight: 400
+      text-transform: capitalize
+
+      &:before
+        content '|'
+        font-family: $fontBN
+
   .form-input
     text-align: left
     position: relative
