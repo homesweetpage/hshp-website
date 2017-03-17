@@ -7,8 +7,8 @@ function validateEmail(email) {
 
 function homeHandle() {
   var $boxImg = $('.idea, .us, .result');
-  var calc = $boxImg.width() * 1.2;
-  $boxImg.height(calc);
+  var calcAspectRatio = $boxImg.width() * 1.2;
+  $boxImg.height(calcAspectRatio);
 }
 
 function formHandle() {
@@ -39,9 +39,25 @@ function formHandle() {
   });
 }
 
+function resizeHandle() {
+  var resizeTimeout;
+
+  function resizeThrottler() {
+    if (!resizeTimeout) {
+      resizeTimeout = setTimeout(function() {
+        resizeTimeout = null;
+        homeHandle();
+      }, 66);
+    }
+  }
+
+  $(window).resize(resizeThrottler);
+}
+
 function mainReady() {
   homeHandle();
   formHandle();
+  resizeHandle();
 }
 
 $(document).ready(mainReady());
