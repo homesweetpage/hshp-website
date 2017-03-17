@@ -6,7 +6,7 @@ if($_POST){
     $email = $_REQUEST['email'];
     $comment = $_REQUEST['comment'];
 
-    $to = "tomasgispert@gmail.com";
+    $to = "hshpsoftware@gmail.com";
 
     $mensaje =
 		"Nombre: " .$name ."\r\n"
