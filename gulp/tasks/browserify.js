@@ -33,10 +33,10 @@ module.exports = function () {
       return bundler.bundle()
         .on('error', handleError('Browserify'))
         .pipe(source('bundle.js'))
-        .pipe(gulpif(build, buffer()))
-        .pipe(gulpif(build, sourcemaps.init()))
+        .pipe(buffer())
+        .pipe(sourcemaps.init())
         .pipe(gulpif(build, uglify()))
-        .pipe(gulpif(build, sourcemaps.write('../assets/maps')))
+        .pipe(sourcemaps.write('../assets/maps'))
         .pipe(gulp.dest(paths.app + paths.js));
     };
 
