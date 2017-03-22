@@ -1,0 +1,176 @@
+#loader-wrapper
+  display: block
+
+  #loader
+    width: 54px
+    height: 31px
+    background-color: transparent
+    z-index: 2100
+    position: fixed
+    left: 50%
+    top: 50%
+    transform: translateY(-50%) translateX(-50%)
+    opacity: 1
+    border-left: 15px solid $white
+    border-right: 15px solid $white
+
+    &:before
+    &:after
+      content: ''
+      height: calc(100%)
+      width: calc(100% + 30px)
+      background-color: transparent
+      position: fixed
+
+    &:before
+      transform: translateX(-15px) rotate(-60deg)
+      border-left: 15px solid $white
+      border-right: 15px solid $white
+
+    &:after
+      transform: translateX(-15px) rotate(60deg)
+      border-left: 15px solid $white
+      border-right: 15px solid $white
+
+  .loader-clk
+    width: 56px
+    height: 22px
+    background-color: $verdebg
+    z-index: 2110
+    position: fixed
+    left: calc(50% - 28px)
+    top: calc(50% - 11px)
+    opacity: 1
+
+  .loader-bd-ext
+    width: 54px
+    height: 31px
+    background-color: transparent
+    z-index: 2130
+    position: fixed
+    left: 50%
+    top: 50%
+    transform: translateY(-50%) translateX(-50%)
+    opacity: 1
+    border-left: 2px solid $white
+    border-right: 2px solid $white
+
+    &:before
+    &:after
+      content: ''
+      height: calc(100%)
+      width: calc(100% + 4px)
+      background-color: transparent
+      position: fixed
+
+    &:before
+      transform: translateX(-2px) rotate(-60deg)
+      border-left: 2px solid $white
+      border-right: 2px solid $white
+
+    &:after
+      transform: translateX(-2px) rotate(60deg)
+      border-left: 2px solid $white
+      border-right: 2px solid $white
+
+  .loader-bd-int
+    width: calc(54px * 0.46)
+    height: calc(31px * 0.46)
+    background-color: transparent
+    z-index: 2130
+    position: fixed
+    left: 50%
+    top: 50%
+    transform: translateY(-50%) translateX(-50%)
+    opacity: 1
+    border-left: 2px solid $white
+    border-right: 2px solid $white
+
+    &:before
+    &:after
+      content: ''
+      height: calc(100%)
+      width: calc(100% + 4px)
+      background-color: transparent
+      position: fixed
+
+    &:before
+      transform: translateX(-2px) rotate(-60deg)
+      border-left: 2px solid $white
+      border-right: 2px solid $white
+
+    &:after
+      transform: translateX(-2px) rotate(60deg)
+      border-left: 2px solid $white
+      border-right: 2px solid $white
+
+  .loader-ext
+    width: calc(54px * 1.5)
+    height: calc(31px * 1.5)
+    background-color: transparent
+    z-index: 2125
+    position: fixed
+    left: 50%
+    top: 50%
+    transform: translateY(-50%) translateX(-50%)
+    opacity: 1
+    border-left: 15px solid $verdebg
+    border-right: 15px solid $verdebg
+
+    &:before
+    &:after
+      content: ''
+      height: calc(100%)
+      width: calc(100% + 30px)
+      background-color: transparent
+      position: fixed
+
+    &:before
+      transform: translateX(-15px) rotate(-60deg)
+      border-left: 15px solid $verdebg
+      border-right: 15px solid $verdebg
+
+    &:after
+      transform: translateX(-15px) rotate(60deg)
+      border-left: 15px solid $verdebg
+      border-right: 15px solid $verdebg
+
+  .loader-int
+    width: calc(54px * 0.46)
+    height: calc(31px * 0.46)
+    background-color: transparent
+    z-index: 2125
+    position: fixed
+    left: 50%
+    top: 50%
+    transform: translateY(-50%) translateX(-50%)
+    opacity: 1
+    border-left: 10px solid $verdebg
+    border-right: 10px solid $verdebg
+
+    &:before
+    &:after
+      content: ''
+      height: calc(100%)
+      width: calc(100% + 20px)
+      background-color: transparent
+      position: fixed
+
+    &:before
+      transform: translateX(-10px) rotate(-60deg)
+      border-left: 10px solid $verdebg
+      border-right: 10px solid $verdebg
+
+    &:after
+      transform: translateX(-10px) rotate(60deg)
+      border-left: 10px solid $verdebg
+      border-right: 10px solid $verdebg
+
+
+  .loader-section
+    position: fixed
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: $verdebg
+    z-index: 2000

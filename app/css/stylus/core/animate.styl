@@ -54,6 +54,12 @@
   animation-iteration-count: 1
   transform-origin: center bottom
 
+.rotating
+  animation-name: rotating
+  animation-duration: 1s
+  animation-timing-function: linear
+  animation-iteration-count: infinite
+
 @keyframes fadeIn
   from
     opacity: 0
@@ -113,3 +119,45 @@
 
   90%
     transform: translate3d(0,-4px,0)
+
+@keyframes rotating
+  from
+    background-color: $verde2
+    transform: rotate(20deg) translateY(-85%) translateX(0%)
+
+  16%
+    background-color: $verde2
+
+  17%
+    background-color: $verde3
+
+  32%
+    background-color: $verde3
+
+  33%
+    background-color: $verde4
+
+  49%
+    background-color: $verde4
+
+  50%
+    background-color: $verde3
+
+  66%
+    background-color: $verde3
+
+  67%
+    background-color: $verde2
+
+  82%
+    background-color: $verde2
+
+  83%
+    background-color: $verde1
+
+  99%
+    background-color: $verde1
+
+  to
+    background-color: $verde2
+    transform: rotate(380deg) translateY(-85%) translateX(0%)
