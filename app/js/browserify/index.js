@@ -23,10 +23,14 @@ function resizeHandle() {
 }
 
 function documentReady() {
-  loader();
   resizeHandle();
-  home();
   contact();
 }
 
+function windowLoad() {
+  loader(home);
+}
+
 $(document).ready(documentReady());
+
+$(window).load(windowLoad());
