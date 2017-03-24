@@ -31,23 +31,21 @@ function animateResult() {
     setTimeout(function() {
       $(el).removeClass('hidden').addClass('zoomIn').one(animationEnd, function() {
         if (index === totalImg - 1) {
-          $boxText.removeClass('hidden').addClass('zoomIn').one(animationEnd, function() {
-            animateButton();
-          });
+          animateButton();
         }
       });
     }, 150*index);
   });
+  $boxText.removeClass('hidden').addClass('zoomIn');
 }
 
 function animateUs() {
   var $us = $('.us');
   var $boxImg = $us.children('.box-img');
   var $boxText = $('.us-box-text');
-  $boxImg.removeClass('hidden').addClass('fadeIn').one(animationEnd, function() {
-    $boxText.removeClass('hidden').addClass('zoomIn').one(animationEnd, function() {
-      animateResult();
-    });
+  $boxImg.removeClass('hidden').addClass('fadeIn');
+  $boxText.removeClass('hidden').addClass('zoomIn').one(animationEnd, function() {
+    animateResult();
   });
 }
 
@@ -55,13 +53,14 @@ function animateIdea() {
   var $idea = $('.idea');
   var $boxImg = $idea.children('.box-img');
   var $boxText = $('.idea-box-text');
-  $boxImg.removeClass('hidden').addClass('fadeIn').one(animationEnd, function() {
-    $boxText.removeClass('hidden').addClass('zoomIn').one(animationEnd, function() {
-      animateUs();
-    });
+  $boxImg.removeClass('hidden').addClass('fadeIn');
+  $boxText.removeClass('hidden').addClass('zoomIn').one(animationEnd, function() {
+    animateUs();
   });
 }
 
 module.exports = function () {
-  animateIdea(); // Start animate in serie
+  setTimeout(function () {
+    animateIdea(); // Start animate in serie
+  }, 300);
 };
