@@ -8,7 +8,6 @@
   .result
     display: inline-block
     padding: 5%
-    margin-bottom: 30px
     width: 100%
 
     .box-img
@@ -22,15 +21,25 @@
         bottom: 0
         right: 0
 
-        &.img-text
-          padding-top: 15%
+  .idea-box-text
+  .us-box-text
+  .result-box-text
+    margin-bottom: 30px
+
+    h3
+      margin: 0
+      color: $white
+      font-size: 3em
 
   .btn-down
-    position: absolute
-    height: 50px
-    width: 50px
-    bottom: 50px
-    left: calc(50% - 25px)
-    color: $white
-    cursor: pointer
 
+    i
+      position: absolute
+      transform: translateY(-50%) translateX(-50%)
+      font-size: 2em
+
+      &:first-child
+        margin-top: 10px
+
+      &:last-child
+        margin-top: 20px
