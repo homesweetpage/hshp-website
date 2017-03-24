@@ -14,8 +14,8 @@ function bounceButton($el) {
 
 function animateButton() {
   var $btn = $('.btn-down');
-  $btn.removeClass('hidden').addClass('zoomIn').one(animationEnd, function() {
-    $(this).removeClass('zoomIn');
+  $btn.removeClass('hidden').addClass('slideInUp').one(animationEnd, function() {
+    $(this).removeClass('slideInUp');
     bounceButton($(this));
   });
 }
@@ -24,13 +24,16 @@ function animateResult() {
   var $result = $('.result');
   var $boxImg = $result.children('.box-img');
   var $img = $boxImg.children('img');
+  var $boxText = $('.result-box-text');
   var totalImg = $img.length;
   $boxImg.removeClass('hidden').addClass('fadeIn');
   $img.each(function(index, el) {
     setTimeout(function() {
       $(el).removeClass('hidden').addClass('zoomIn').one(animationEnd, function() {
         if (index === totalImg - 1) {
-          animateButton();
+          $boxText.removeClass('hidden').addClass('zoomIn').one(animationEnd, function() {
+            animateButton();
+          });
         }
       });
     }, 150*index);
@@ -40,16 +43,22 @@ function animateResult() {
 function animateUs() {
   var $us = $('.us');
   var $boxImg = $us.children('.box-img');
+  var $boxText = $('.us-box-text');
   $boxImg.removeClass('hidden').addClass('fadeIn').one(animationEnd, function() {
-    animateResult();
+    $boxText.removeClass('hidden').addClass('zoomIn').one(animationEnd, function() {
+      animateResult();
+    });
   });
 }
 
 function animateIdea() {
   var $idea = $('.idea');
   var $boxImg = $idea.children('.box-img');
+  var $boxText = $('.idea-box-text');
   $boxImg.removeClass('hidden').addClass('fadeIn').one(animationEnd, function() {
-    animateUs();
+    $boxText.removeClass('hidden').addClass('zoomIn').one(animationEnd, function() {
+      animateUs();
+    });
   });
 }
 
