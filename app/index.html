@@ -7,12 +7,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
-    <link rel='shortcut icon' type='image/x-icon' href='images/logos/favicon.png' />
-
+    <link rel='shortcut icon' type='image/x-icon' href='assets/images/logos/favicon.png' />
 		<!-- build:css css/stylesheet.min.css -->
-    <link rel="stylesheet" href="vendor/normalize/normalize.css">
-    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
   	<!-- endbuild -->
   </head>
@@ -20,6 +16,18 @@
     <!--[if lt IE 8]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+
+    <!-- LOADER -->
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+      <div class="loader-clk rotating"></div>
+      <div class="loader-bd-ext"></div>
+      <div class="loader-bd-int"></div>
+      <div class="loader-ext"></div>
+      <div class="loader-int"></div>
+
+      <div class="loader-section"></div>
+    </div><!-- ./LOADER -->
 
     <div id="VerticalScrollFullPage">
 
@@ -29,118 +37,119 @@
           <div class="col-xs-6 col-sm-4">
             <div class="idea">
               <div class="box-img hidden">
-                <img src="images/idea/foco.png" alt="your-idea" class="img-responsive">
-                <img src="images/idea/amarillo.png" alt="your-idea" class="img-responsive idea-animate idea-delay-1">
-                <img src="images/idea/rosa.png" alt="your-idea" class="img-responsive idea-animate idea-delay-2">
-                <img src="images/idea/celeste.png" alt="your-idea" class="img-responsive idea-animate idea-delay-3">
-                <img src="images/idea/verde.png" alt="your-idea" class="img-responsive idea-animate idea-delay-4">
-                <img src="images/idea/violeta.png" alt="your-idea" class="img-responsive idea-animate idea-delay-5">
-                <img src="images/idea/destellos chicos.png" alt="your-idea" class="img-responsive pulse pulse-delay">
-                <img src="images/idea/destellos grandes.png" alt="your-idea" class="img-responsive pulse">
-                <img src="images/idea/texto.png" alt="Tus ideas" class="img-responsive img-text">
+                <img src="assets/images/idea/foco.png" alt="your-idea" class="img-responsive">
+                <img src="assets/images/idea/amarillo.png" alt="your-idea" class="img-responsive idea-animate idea-delay-1">
+                <img src="assets/images/idea/rosa.png" alt="your-idea" class="img-responsive idea-animate idea-delay-2">
+                <img src="assets/images/idea/celeste.png" alt="your-idea" class="img-responsive idea-animate idea-delay-3">
+                <img src="assets/images/idea/verde.png" alt="your-idea" class="img-responsive idea-animate idea-delay-4">
+                <img src="assets/images/idea/violeta.png" alt="your-idea" class="img-responsive idea-animate idea-delay-5">
+                <img src="assets/images/idea/destellos chicos.png" alt="your-idea" class="img-responsive pulse pulse-delay">
+                <img src="assets/images/idea/destellos grandes.png" alt="your-idea" class="img-responsive pulse">
               </div>
+            </div>
+            <div class="idea-box-text hidden">
+              <h3 class="hshp-title">Tus<span>Ideas</span></h3>
             </div>
           </div>
           <div class="col-xs-6 col-sm-4">
             <div class="us">
               <div class="box-img hidden">
-                <img src="images/us/hshp.png" alt="us-hshp" class="img-responsive us-animate">
-                <img src="images/us/texto.png" alt="HSHP Software" class="img-responsive img-text">
+                <img src="assets/images/us/hshp.png" alt="us-hshp" class="img-responsive us-animate">
               </div>
+            </div>
+            <div class="us-box-text hidden">
+              <h3 class="hshp-title">HSHP<span>Software</span></h3>
             </div>
           </div>
           <div class="col-xs-6 col-xs-offset-3 col-sm-offset-0 col-sm-4">
             <div class="result">
               <div class="box-img hidden">
-                <img src="images/result/texto.png" alt="Tu solucion web" class="img-responsive img-text">
-                <img src="images/result/1.png" alt="result" class="img-responsive hidden">
-                <img src="images/result/2.png" alt="result" class="img-responsive hidden">
-                <img src="images/result/3.png" alt="result" class="img-responsive hidden">
-                <img src="images/result/4.png" alt="result" class="img-responsive hidden">
-                <img src="images/result/5.png" alt="result" class="img-responsive hidden">
-                <img src="images/result/6.png" alt="result" class="img-responsive hidden">
-                <img src="images/result/7.png" alt="result" class="img-responsive hidden">
-                <img src="images/result/8.png" alt="result" class="img-responsive hidden">
-                <img src="images/result/9.png" alt="result" class="img-responsive hidden">
-                <img src="images/result/10.png" alt="result" class="img-responsive hidden">
-                <img src="images/result/11.png" alt="result" class="img-responsive hidden">
-                <img src="images/result/12.png" alt="result" class="img-responsive hidden">
-                <img src="images/result/13.png" alt="result" class="img-responsive hidden">
+                <img src="assets/images/result/1.png" alt="result" class="img-responsive hidden">
+                <img src="assets/images/result/2.png" alt="result" class="img-responsive hidden">
+                <img src="assets/images/result/3.png" alt="result" class="img-responsive hidden">
+                <img src="assets/images/result/4.png" alt="result" class="img-responsive hidden">
+                <img src="assets/images/result/5.png" alt="result" class="img-responsive hidden">
+                <img src="assets/images/result/6.png" alt="result" class="img-responsive hidden">
+                <img src="assets/images/result/7.png" alt="result" class="img-responsive hidden">
+                <img src="assets/images/result/8.png" alt="result" class="img-responsive hidden">
+                <img src="assets/images/result/9.png" alt="result" class="img-responsive hidden">
+                <img src="assets/images/result/10.png" alt="result" class="img-responsive hidden">
+                <img src="assets/images/result/11.png" alt="result" class="img-responsive hidden">
+                <img src="assets/images/result/12.png" alt="result" class="img-responsive hidden">
+                <img src="assets/images/result/13.png" alt="result" class="img-responsive hidden">
               </div>
+            </div>
+            <div class="result-box-text hidden">
+              <h3 class="hshp-title">Tu<span>Solucion web</span></h3>
             </div>
           </div>
         </div>
         <div class="container">
-          <span class="btn-down hidden">
-            <img src="images/test2.png" alt="arrowDown" class="img-responsive">
+          <span class="btn-down hidden hshp-btn-hexa">
+            <i class="glyphicon glyphicon-menu-down"></i>
+            <i class="glyphicon glyphicon-menu-down"></i>
           </span>
         </div>
       </section><!-- ./HOME -->
 
       <!-- CONTACT -->
       <section id="contact" class="section">
-        <div class="container ta-center">
-          <div class="box-form box-shadow">
-            <form action="" method="POST" role="form" class="col-md-8 col-md-offset-2">
-              <div class="col-sm-12">
-                <legend class="hshp-title">Contactate<span>Con nosotros!</span></legend>
-              </div>
-
-              <div class="col-sm-6">
-                <div class="form-input square-bracket">
-                  <label for="first_name">Nombre</label>
-                  <input type="text" id="first_name" name="first_name">
+        <div class="center-row">
+          <div class="container ta-center">
+            <div class="box-form box-shadow">
+              <form action="" method="POST" role="form" class="col-md-8 col-md-offset-2">
+                <div class="col-sm-12">
+                  <legend class="hshp-title">Contactate<span>Con nosotros!</span></legend>
                 </div>
-              </div>
 
-              <div class="col-sm-6">
-                <div class="form-input square-bracket">
-                  <label for="last_name">Apellido</label>
-                  <input type="text" id="last_name" name="last_name">
+                <div class="col-sm-6">
+                  <div class="form-input square-bracket">
+                    <label for="first_name">Nombre</label>
+                    <input type="text" id="first_name" name="first_name">
+                  </div>
                 </div>
-              </div>
 
-              <div class="col-sm-12">
-                <div class="form-input square-bracket">
-                  <label for="email">Email</label>
-                  <input type="text" id="email" name="email">
+                <div class="col-sm-6">
+                  <div class="form-input square-bracket">
+                    <label for="last_name">Apellido</label>
+                    <input type="text" id="last_name" name="last_name">
+                  </div>
                 </div>
-              </div>
 
-              <div class="col-sm-12">
-                <div class="form-input square-bracket">
-                  <label for="comment">Comentario</label>
-                  <textarea name="comment" id="comment" cols="30" rows="5"></textarea>
+                <div class="col-sm-12">
+                  <div class="form-input square-bracket">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email">
+                  </div>
                 </div>
-              </div>
 
-              <div class="col-sm-12">
-                <div class="cb-send square-bracket square-error">
-                  <h5 class="hshp-title">Error<span>Mensaje no enviado</span></h5>
+                <div class="col-sm-12">
+                  <div class="form-input square-bracket">
+                    <label for="comment">Comentario</label>
+                    <textarea name="comment" id="comment" cols="30" rows="5"></textarea>
+                  </div>
                 </div>
-              </div>
 
-              <div class="col-sm-12 ta-right">
-                <button type="submit" id="contact_submit" class="btn-hshp">Enviar</button>
-              </div>
-            </form>
+                <div class="col-sm-12">
+                  <div class="cb-send square-bracket square-error">
+                    <h5 class="hshp-title">Error<span>Mensaje no enviado</span></h5>
+                  </div>
+                </div>
+
+                <div class="col-sm-12 ta-right">
+                  <button type="submit" id="contact_submit" class="btn-hshp">Enviar</button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </section><!-- ./CONTACT -->
 
     </div><!-- ./VSOP -->
 
-    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script>window.jQuery || document.write('<script src="vendor/jquery/jquery-1.12.0.min.js"><\/script>')</script>
-    <!-- build:js js/vendor.min.js -->
-    <script src="vendor/bootstrap/bootstrap.js"></script>
-    <script src="vendor/hammer/hammer.js"></script>
-    <!-- endbuild -->
-		<!-- build:js js/scripts.min.js -->
-    <script src="js/main.js"></script>
-    <script src="js/animate.js"></script>
-    <script src="js/contacto.js"></script>
-    <script src="js/vsop.js"></script>
+
+		<!-- build:js js/bundle.min.js -->
+    <script src="js/bundle.js"></script>
 		<!-- endbuild -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

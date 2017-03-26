@@ -73,3 +73,41 @@ body
     &:before
       content '|'
       font-family: $fontBN
+
+.hshp-btn-hexa
+  color: $white
+  width: 51px
+  height: 29px
+  background-color: transparent
+  position: absolute
+  left: 50%
+  bottom: 45px
+  transform: translateY(-50%) translateX(-50%)
+  opacity: 1
+  border-left: 2px solid $white
+  border-right: 2px solid $white
+  cursor: pointer
+
+  &:before
+  &:after
+    content: ''
+    height: 100%
+    width: calc(100% + 4px)
+    background-color: transparent
+    position: absolute
+
+  &:before
+    transform: translateX(-50%) rotate(-60deg)
+    border-left: 2px solid $white
+    border-right: 2px solid $white
+
+  &:after
+    transform: translateX(-50%) rotate(60deg)
+    border-left: 2px solid $white
+    border-right: 2px solid $white
+
+section
+  position: relative
+
+  .center-row
+    width 100%

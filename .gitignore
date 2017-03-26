@@ -1,6 +1,5 @@
 node_modules/
 dist/
 app/css/style.css
-app/images/*
-app/videos/*
-app/audio/*
+app/js/bundle.js
+app/assets/*

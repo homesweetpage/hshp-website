@@ -1,0 +1,9 @@
+{
+  "app": "./app",
+  "dist": "./dist",
+  "css": "/css",
+  "js": "/js",
+  "assets": "/assets",
+  "stylus": "/css/stylus",
+  "browserify": "/js/browserify"
+}

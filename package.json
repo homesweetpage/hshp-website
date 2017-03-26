@@ -17,19 +17,29 @@
   },
   "homepage": "https://github.com/hshp/hshp-website#readme",
   "devDependencies": {
+    "app-root-path": "^2.0.1",
+    "browserify": "^14.1.0",
+    "del": "^2.2.2",
     "gulp": "^3.9.1",
-    "gulp-clean-css": "^3.0.3",
     "gulp-if": "^2.0.2",
     "gulp-jshint": "^2.0.4",
     "gulp-notify": "^3.0.0",
-    "gulp-plumber": "^1.1.0",
+    "gulp-sourcemaps": "^2.4.1",
     "gulp-stylus": "^2.6.0",
     "gulp-uglify": "^2.1.0",
-    "gulp-uncss": "^1.0.6",
     "gulp-useref": "^3.1.2",
+    "gulp-util": "^3.0.8",
     "gulp-webserver": "^0.9.1",
     "jshint": "^2.9.4",
     "jshint-stylish": "^2.2.1",
-    "nib": "^1.1.2"
+    "nib": "^1.1.2",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.9.0",
+    "yargs": "^7.0.2"
+  },
+  "dependencies": {
+    "hammerjs": "^2.0.8",
+    "jquery": "^1.12.0"
   }
 }
